@@ -1,10 +1,13 @@
-version: 2
+version: 2.1
 jobs:
   ansible_lint:
     docker:
       - image: circleci/python:latest
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "a8:5b:0d:9f:4a:a5:d1:a3:28:a4:d6:be:4d:81:7d:5e"
       - run:
           name: Install ansible-lint
           command: pip install ansible ansible-lint yamllint --progress-bar off
@@ -34,7 +37,7 @@ jobs:
           command: yamllint -s .
 
 workflows:
-  version: 2
+  version: 2.1
   lint_and_test:
     jobs:
       - ansible_lint
