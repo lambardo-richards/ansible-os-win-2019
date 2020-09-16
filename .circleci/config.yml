@@ -4,10 +4,10 @@ jobs:
     docker:
       - image: circleci/python:latest
     steps:
-      - checkout
       - add_ssh_keys:
           fingerprints:
-            - "a8:5b:0d:9f:4a:a5:d1:a3:28:a4:d6:be:4d:81:7d:5e"
+            - "8b:04:83:e4:3f:d1:d3:eb:da:33:c3:60:fb:c2:2b:be"
+      - checkout
       - run:
           name: Install ansible-lint
           command: pip install ansible ansible-lint yamllint --progress-bar off
