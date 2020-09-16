@@ -1,6 +1,5 @@
 ---
-- name: Harden Win2019 Server
-  hosts: all
+- hosts: all
   tasks:
        - include_role:
            name: ansible-os-win-2019
