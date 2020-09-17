@@ -3,7 +3,6 @@
 ## CIS LEVEL 1 SETTINGS ##
 ##########################
 ##########################
-
    - name: "1.1.1,CCE-37166-6 | Ensure 'Enforce password history' is set to '24 or more password(s)'"
      win_security_policy:
         section: System Access
@@ -79,7 +78,6 @@
         value: 1800
      tags:
          - rule_1.2.3
-
 #########
 ## EOF ##
 #########
