@@ -17,6 +17,6 @@ skip_list:
 - ANSIBLE0016
 - ANSIBLE0017
 - ANSIBLE0018
-#Skipping Line Length Rule to allow Task Names to exactly match CIS Setting Titles
-- '204' 
+- '204'
+- '106'
 verbosity: 1
