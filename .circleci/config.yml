@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 jobs:
   ansible_lint:
     docker:
@@ -37,7 +37,7 @@ jobs:
           command: yamllint -s .
 
 workflows:
-  version: 2.1
+  version: 2
   lint_and_test:
     jobs:
       - ansible_lint
