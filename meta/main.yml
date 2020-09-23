@@ -23,7 +23,7 @@ galaxy_info:
   #  - 2016
      - 2019
   #
-  galaxy_tags: 
+  galaxy_tags:
     - system
     - windows
     # List tags for your role here, one per line. A tag is a keyword that describes
